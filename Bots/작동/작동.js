@@ -1801,28 +1801,6 @@ function send_alarm(param, param_2) {
         return;
       }
     }
-
-    if (param_2 == "오전0시") {
-
-      // Admin process 추가할것
-      var user_path = Array.from(new java.io.File("/sdcard/DB/USER_DB/").listFiles());
-      for (var i = 0; i < user_path.length; i++) {
-
-        var data = JSON.parse(FileStream.read(user_path[i]));
-        var USER_data = getUserData(data.user_id);
-        data["Request_Auth"] = 0;
-        data["log_number"] = 0;
-        data["log_history"] = [];
-        data["name"] = USER_data.name;
-
-        FileStream.write(user_path[i], JSON.stringify(data));
-      }
-
-      Api.replyRoom("너굴 봇 관리방", "[SYSTEM]\n등록 된 멤버는 " + user_path.length + "명입니다!");
-      return;
-    }
-
-
   } else {
 
     return;
