@@ -1506,6 +1506,7 @@ function run(param, param_2) {
         }
       }
       ////* 국내주식 *////
+
       ////* 처리종료 *////
 
       if (message == ":처리종료") {
