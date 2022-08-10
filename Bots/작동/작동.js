@@ -1136,7 +1136,7 @@ function run (param,param_2) {
       
       ////* 해외주식 *////
       
-      if (message.indexOf ("ㅂ") == 0) {
+      if ((message.includes("ㅂ"))||(message.includes("q")) == true) {
       
         if (Us_Stock == false) {
                  
@@ -1508,7 +1508,7 @@ function run (param,param_2) {
       }
     
       ////* 처리종료 *////
-      
+
       Update_USERDATA(user_id,room_id,USER_data_json);
     }
   } catch(e) {
