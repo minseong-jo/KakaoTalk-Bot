@@ -1,0 +1,10 @@
+{
+    "main": "작동.js",
+    "option": {
+        "apiLevel": 1,
+        "useUnifiedParams": false,
+        "useBabel": false,
+        "scriptPower": true,
+        "offOnRuntimeError": false
+    }
+}
